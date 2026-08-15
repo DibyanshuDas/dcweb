@@ -9,7 +9,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-24 pt-10 relative z-10">
+    <div className="flex flex-col lg:flex-row gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex-1 flex flex-col gap-16">
         <div>
           <div className="mb-6 flex items-center gap-4">

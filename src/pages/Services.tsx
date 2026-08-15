@@ -5,7 +5,7 @@ export default function Services() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-32 pt-10 relative z-10">
+    <div className="flex flex-col gap-32 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex flex-col">
         <div className="mb-6 flex items-center gap-4">
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
@@ -51,11 +51,11 @@ export default function Services() {
                 className="w-full py-10 flex justify-between items-center text-left"
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
               >
-                <span className="text-lg md:text-xl font-black uppercase tracking-tight text-gray-800 hover:text-black transition-colors">{faq.q}</span>
+                <span className="text-lg md:text-xl font-bold tracking-tight text-gray-800 hover:text-black transition-colors">{faq.q}</span>
                 <span className="text-[#86BC2A] font-mono text-2xl font-bold">{openFaq === i ? '-' : '+'}</span>
               </button>
               {openFaq === i && (
-                <div className="pb-10 text-xs text-gray-600 font-bold uppercase tracking-widest leading-loose">
+                <div className="pb-10 text-base text-gray-600 leading-relaxed">
                   {faq.a}
                 </div>
               )}

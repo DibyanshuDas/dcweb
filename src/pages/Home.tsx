@@ -20,6 +20,7 @@ const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string } 
         src={company.logoUrl} 
         alt={company.name} 
         className="max-w-full max-h-full object-contain pointer-events-none" 
+        referrerPolicy="no-referrer"
         onError={() => setImgError(true)} 
       />
     </div>
@@ -28,7 +29,7 @@ const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string } 
 
 export default function Home({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
-    <div className="flex flex-col gap-32 relative z-10">
+    <div className="flex flex-col gap-32 relative z-10 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32">
       {/* Hero */}
       <section className="flex flex-col lg:flex-row gap-16 pt-10">
         <div className="flex-1 flex flex-col justify-center">

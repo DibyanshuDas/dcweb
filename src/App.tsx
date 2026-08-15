@@ -53,9 +53,9 @@ export default function App() {
         </svg>
       </div>
 
-      <div className="w-full px-6 md:px-16 lg:px-24 xl:px-32 flex-1 flex flex-col relative z-10">
+      <div className="w-full flex-1 flex flex-col relative z-10">
         <Navigation currentPage={currentPage} onNavigate={setCurrentPage} />
-        <main className="flex-1 pt-32 pb-12 overflow-x-hidden">
+        <main className="flex-1 overflow-x-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentPage}
@@ -68,7 +68,9 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
         </main>
-        <Footer onNavigate={setCurrentPage} />
+        <div className="px-6 md:px-16 lg:px-24 xl:px-32">
+          <Footer onNavigate={setCurrentPage} />
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { PROJECTS } from '../data';
 
 export default function Projects() {
   return (
-    <div className="flex flex-col gap-24 pt-10 h-full relative z-10">
+    <div className="flex flex-col gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 h-full relative z-10">
       <div className="flex flex-col">
         <div className="mb-6 flex items-center gap-4">
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>

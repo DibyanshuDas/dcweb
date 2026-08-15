@@ -2,7 +2,7 @@ import { TEAM } from '../data';
 
 export default function Team() {
   return (
-    <div className="flex flex-col gap-32 pt-10 relative z-10">
+    <div className="flex flex-col gap-32 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex flex-col">
         <div className="mb-6 flex items-center gap-4">
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>

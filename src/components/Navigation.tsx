@@ -13,7 +13,7 @@ export default function Navigation({ currentPage, onNavigate }: { currentPage: s
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5">
       <div 
         className="cursor-pointer"
         onClick={() => handleNav('Home')}
@@ -22,7 +22,7 @@ export default function Navigation({ currentPage, onNavigate }: { currentPage: s
       </div>
 
       {/* Desktop Nav */}
-      <nav className="hidden md:flex gap-10 text-[10px] uppercase tracking-[0.4em] font-bold">
+      <nav className="hidden md:flex ml-auto gap-8 text-sm uppercase tracking-widest font-bold">
         {pages.map(page => (
           <button 
             key={page} 
