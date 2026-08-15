@@ -43,7 +43,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
                <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                  {d.avatar.includes('/') ? (
-                   <img src={d.avatar} alt={d.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                   <img src={d.avatar} alt={d.name} className="w-full h-full object-cover"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500">{d.avatar}</div>
                  )}
@@ -69,7 +69,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
                <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                  {advisor.avatar.includes('/') ? (
-                   <img src={advisor.avatar} alt={advisor.name} className="w-full h-full object-cover object-top" referrerPolicy="no-referrer" />
+                   <img src={advisor.avatar} alt={advisor.name} className="w-full h-full object-cover object-top"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500">{advisor.avatar}</div>
                  )}
@@ -94,7 +94,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
               <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                 {alumnus.avatar.includes('/') ? (
-                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top grayscale" referrerPolicy="no-referrer" />
+                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top grayscale"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500 bg-gray-200">{alumnus.avatar}</div>
                  )}

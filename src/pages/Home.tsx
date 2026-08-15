@@ -3,7 +3,7 @@ import { STATS, ALUMNI_COMPANIES, BLOG_POSTS } from '../data';
 import { motion } from 'motion/react';
 import logo180dcGlobe from '../assets/logos/180dc_globe.jpg';
 
-const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string } }) => {
+const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string }, key?: string }) => {
   const [imgError, setImgError] = useState(false);
 
   if (imgError || !company.logoUrl) {
@@ -20,7 +20,7 @@ const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string } 
         src={company.logoUrl} 
         alt={company.name} 
         className="max-w-full max-h-full object-contain pointer-events-none" 
-        referrerPolicy="no-referrer"
+        
         onError={() => setImgError(true)} 
       />
     </div>
