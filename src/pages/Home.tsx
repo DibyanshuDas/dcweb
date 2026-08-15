@@ -131,9 +131,9 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
 
       {/* Blogs */}
       <section>
-        <div className="flex justify-between items-end mb-12">
-          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-black">From Our<br/>Blog</h2>
-          <a href="https://www.180dciitkgp.in/blogs" target="_blank" rel="noopener noreferrer" className="text-[10px] uppercase tracking-widest font-bold text-[#86BC2A] hover:text-black border-b border-[#86BC2A] pb-1 transition-colors">All Articles</a>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-12">
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-black">From Our Blog</h2>
+          <a href="https://www.180dciitkgp.in/blogs" target="_blank" rel="noopener noreferrer" className="text-[10px] uppercase tracking-widest font-bold text-[#86BC2A] hover:text-black border-b border-[#86BC2A] pb-1 transition-colors w-fit">All Articles</a>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {BLOG_POSTS.map((post, i) => (

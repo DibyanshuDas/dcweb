@@ -13,7 +13,7 @@ export default function Navigation({ currentPage, onNavigate }: { currentPage: s
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5">
+    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-3 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5">
       <div 
         className="cursor-pointer"
         onClick={() => handleNav('Home')}
