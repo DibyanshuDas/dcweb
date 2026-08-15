@@ -2,6 +2,7 @@
 
 @theme {
   --font-sans: "Google Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
   --animate-marquee-left: marquee-left 40s linear infinite;
   --animate-marquee-right: marquee-right 40s linear infinite;
   

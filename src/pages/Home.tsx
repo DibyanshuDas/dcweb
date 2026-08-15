@@ -38,8 +38,8 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             <span className="text-[#86BC2A] text-[11px] font-black uppercase tracking-[0.5em]">IIT Kharagpur &middot; 180DC Global Network</span>
           </div>
           
-          <h1 className="text-6xl md:text-[80px] lg:text-[100px] font-black leading-[0.82] uppercase tracking-tighter mb-10 text-gray-900">
-            Turning<br/>Challenges<br/>Into <span className="text-transparent" style={{ WebkitTextStroke: '2px #0F0F0F' }}>Oppor-</span><br/><span className="text-transparent" style={{ WebkitTextStroke: '2px #0F0F0F' }}>tunities</span>
+          <h1 className="text-[12vw] sm:text-6xl md:text-[80px] lg:text-[100px] font-black leading-[0.9] uppercase tracking-tighter mb-10 text-[#0F1115]">
+            Turning<br/>Challenges<br/>Into <span className="text-[#86BC2A]">Oppor-</span><br/><span className="text-[#86BC2A]">tunities</span>
           </h1>
 
           <p className="text-xs md:text-sm leading-relaxed text-gray-600 max-w-xl mb-12 font-bold tracking-wide uppercase">

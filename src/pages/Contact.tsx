@@ -16,8 +16,8 @@ export default function Contact() {
             <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
             <span className="text-[#86BC2A] text-[11px] font-black uppercase tracking-[0.5em]">Reach Out</span>
           </div>
-          <h1 className="text-6xl md:text-[80px] font-black uppercase tracking-tighter leading-[0.9] mb-8 text-black">
-            Get In<br/><span className="text-transparent" style={{ WebkitTextStroke: '2px #0F0F0F' }}>Touch</span>
+          <h1 className="text-[12vw] sm:text-6xl md:text-[80px] font-black uppercase tracking-tighter leading-[0.9] text-[#0F1115] mb-8">
+            Get In<br/><span className="text-[#86BC2A]">Touch</span>
           </h1>
           <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500 leading-relaxed max-w-md">
             Client applications are accepted on a rolling basis. Current intake: Spring 2025.

@@ -8,8 +8,8 @@ export default function Resources() {
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
           <span className="text-[#86BC2A] text-[11px] font-black uppercase tracking-[0.5em]">Knowledge</span>
         </div>
-        <h1 className="text-6xl md:text-[100px] font-black uppercase tracking-tighter leading-none mb-12 text-black">
-          <span className="text-transparent" style={{ WebkitTextStroke: '2px #0F0F0F' }}>Open</span><br/>Resources
+        <h1 className="text-[12vw] sm:text-6xl md:text-[100px] font-black uppercase tracking-tighter leading-[0.9] text-[#0F1115] mb-12">
+          <span className="text-[#86BC2A]">Open</span><br/>Resources
         </h1>
       </div>
 

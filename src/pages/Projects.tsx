@@ -8,8 +8,8 @@ export default function Projects() {
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
           <span className="text-[#86BC2A] text-[11px] font-black uppercase tracking-[0.5em]">Our Portfolio</span>
         </div>
-        <h1 className="text-6xl md:text-[100px] font-black uppercase tracking-tighter leading-none text-black">
-          28+ <span className="text-transparent" style={{ WebkitTextStroke: '2px #0F0F0F' }}>Global</span><br/>Engagements
+        <h1 className="text-[12vw] sm:text-6xl md:text-[100px] font-black uppercase tracking-tighter leading-[0.9] text-[#0F1115]">
+          28+ <span className="text-[#86BC2A]">Global</span><br/>Engagements
         </h1>
       </div>
 
