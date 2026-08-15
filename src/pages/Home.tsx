@@ -62,6 +62,9 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
         
         <div className="w-full lg:w-1/3 flex flex-col justify-end border-l-2 border-gray-200 pl-8 py-8 relative">
            <div className="mb-12">
+             <div className="w-48 h-48 md:w-64 md:h-64 mb-8 flex-shrink-0 relative">
+               <img src="/logos/180dc_globe.jpg" alt="180DC Logo Globe" className="w-full h-full object-contain mix-blend-multiply" />
+             </div>
              <div className="text-[10px] uppercase tracking-widest text-[#86BC2A] mb-4 font-bold">Why 180 Degrees?</div>
              <p className="text-sm font-bold uppercase text-gray-600 mb-4 tracking-wider leading-relaxed">"It's because we work to turn good organizations into great organizations, and challenges into opportunities."</p>
              <div className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">— Nat Ware (Founder & CEO)</div>

@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 
 export default function Navigation({ currentPage, onNavigate }: { currentPage: string, onNavigate: (page: string) => void }) {
   const [isOpen, setIsOpen] = useState(false);
-  const pages = ['Home', 'Services', 'Projects', 'Team', 'Resources', 'Contact'];
+  const pages = ['Home', 'About', 'Services', 'Projects', 'Team', 'Resources', 'Contact'];
 
   const handleNav = (page: string) => {
     onNavigate(page);
@@ -12,12 +12,12 @@ export default function Navigation({ currentPage, onNavigate }: { currentPage: s
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5">
+    <header className="fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-16 lg:px-24 xl:px-32 z-50 bg-[#FDFCF8]/90 backdrop-blur-md border-b border-black/5" style={{ fontFamily: "'Open Sans', sans-serif" }}>
       <div 
-        className="text-2xl font-black tracking-tighter cursor-pointer"
+        className="cursor-pointer"
         onClick={() => handleNav('Home')}
       >
-        180DC<span className="text-[#86BC2A]">.</span>KGP
+        <img src="/logos/180dc_full.png" alt="180 Degrees Consulting" className="h-6 md:h-8 object-contain" />
       </div>
 
       {/* Desktop Nav */}

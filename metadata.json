@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "180DC IIT Kharagpur",
+  "description": "180 Degrees Consulting IIT Kharagpur website.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

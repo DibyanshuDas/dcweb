@@ -3,9 +3,10 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Home from './pages/Home';
+import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Team from './pages/Team';
@@ -18,9 +19,14 @@ import CustomCursor from './components/CustomCursor';
 export default function App() {
   const [currentPage, setCurrentPage] = useState('Home');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
   const renderPage = () => {
     switch (currentPage) {
       case 'Home': return <Home onNavigate={setCurrentPage} />;
+      case 'About': return <About onNavigate={setCurrentPage} />;
       case 'Services': return <Services />;
       case 'Projects': return <Projects />;
       case 'Team': return <Team />;
