@@ -1,9 +1,11 @@
+import logo180dcFull from '../assets/logos/180dc_full.png';
+
 export default function Footer({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
     <footer className="border-t border-gray-200 pt-10 pb-16 mt-20 flex flex-col md:flex-row justify-between gap-12 z-10 relative" style={{ fontFamily: "'Open Sans', sans-serif" }}>
       <div className="max-w-xs">
         <div className="mb-6 cursor-pointer" onClick={() => onNavigate('Home')}>
-          <img src="/logos/180dc_full.png" alt="180 Degrees Consulting" className="h-6 md:h-8 object-contain" />
+          <img src={logo180dcFull} alt="180 Degrees Consulting" className="h-6 md:h-8 object-contain" />
         </div>
         <p className="text-[10px] leading-relaxed text-gray-500 font-bold tracking-widest uppercase">
           Student consulting org for nonprofits & social enterprises.
