@@ -5,64 +5,50 @@ export default function About({ onNavigate }: { onNavigate: (page: string) => vo
     <div className="w-full min-h-screen pb-20">
       
       {/* Hero Section */}
-      <div className="w-full bg-[#E8EDEC] relative overflow-hidden" style={{
-        backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0,50 Q25,20 50,50 T100,50\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.5\" stroke-dasharray=\"2,4\" opacity=\"0.5\"/%3E%3Cpath d=\"M0,80 Q35,50 70,80 T100,20\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.5\" stroke-dasharray=\"2,4\" opacity=\"0.5\"/%3E%3Cpath d=\"M20,0 Q50,40 20,100\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.5\" stroke-dasharray=\"2,4\" opacity=\"0.5\"/%3E%3C/svg%3E')"
-      }}>
-        <div className="max-w-[1200px] mx-auto pt-48 pb-32 px-6 md:px-12 relative z-10">
-          <div className="text-[#86BC2A] text-xs uppercase tracking-[0.3em] font-bold mb-6">About Us</div>
-          <h1 className="text-5xl md:text-6xl lg:text-[80px] font-black tracking-tighter text-[#1A1A1A] max-w-4xl leading-[1.05] mb-12">
-            What makes 180Degrees, <br/><span className="inline-block transform scale-y-[-1] scale-x-[-1] mt-2">180Degrees</span> ?
+      <div className="w-full relative overflow-hidden bg-gradient-to-br from-[#5A9B26] to-[#396316] pt-24 md:pt-32">
+        {/* Abstract waves SVG overlay */}
+        <div className="absolute inset-0 opacity-20 pointer-events-none" style={{
+           backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M-10,40 Q25,10 60,60 T110,30\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.3\" stroke-dasharray=\"1,2\"/%3E%3Cpath d=\"M-10,60 Q35,80 70,30 T110,60\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.3\" stroke-dasharray=\"1,2\"/%3E%3Cpath d=\"M-10,20 Q50,70 110,10\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.3\" stroke-dasharray=\"1,2\"/%3E%3Cpath d=\"M-10,80 Q40,20 110,70\" fill=\"none\" stroke=\"%23ffffff\" stroke-width=\"0.3\" stroke-dasharray=\"1,2\"/%3E%3C/svg%3E')"
+        }}></div>
+        <div className="max-w-[1200px] mx-auto pb-24 md:pb-32 px-6 md:px-12 relative z-10 flex justify-center items-center">
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-white/90">
+            About Us
           </h1>
-          <div className="flex flex-col gap-6 max-w-2xl text-[#4A4A4A] text-base md:text-lg leading-relaxed">
+        </div>
+      </div>
+
+      {/* Mission & Vision Split Section */}
+      <div className="w-full flex flex-col md:flex-row">
+        {/* Mission */}
+        <div className="w-full md:w-1/2 bg-[#EBEBEB] py-24 px-10 md:px-20 flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-8 tracking-tight">Our Mission</h2>
+          <p className="text-[#555555] leading-relaxed text-base md:text-lg max-w-lg">
+            To help non-profits and social enterprises overcome challenges for the greatest possible social impact by providing affordable and high quality consulting services.
+          </p>
+        </div>
+
+        {/* Vision */}
+        <div className="w-full md:w-1/2 bg-[#61A127] py-24 px-10 md:px-20 flex flex-col items-center justify-center text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tight">Our Vision</h2>
+          <p className="text-white/90 leading-relaxed text-base md:text-lg max-w-lg">
+            To ensure that the movement towards resolving pressing world issues such as poverty, global warming, etc. is unfettered by economic or social constraints and thereby develop the next generation of leaders.
+          </p>
+        </div>
+      </div>
+
+      {/* Intro Description */}
+      <div className="w-full bg-white pt-24 pb-12">
+        <div className="max-w-[1000px] mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-[#1A1A1A] leading-[1.1] mb-10">
+            What makes 180Degrees, <br/><span className="inline-block transform scale-y-[-1] scale-x-[-1] mt-2">180Degrees</span> ?
+          </h2>
+          <div className="flex flex-col gap-6 text-[#4A4A4A] text-base md:text-lg leading-relaxed max-w-3xl">
             <p>
               180 Degrees Consulting, IIT Kharagpur, founded in April 2020 is an organisation that aims to provide quality consultancy services to socially conscious corporations and NGOs in order to help them achieve the impact they seek to create. Being students of the oldest, largest and most versatile of IITs, the team consists of people who are driven, capable and have diverse skill sets across various fields.
             </p>
             <p>
               This is a platform where students can gain leadership skills, consulting experience and professional etiquette with a chance to drive value through the quality of their collaborative work.
             </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Mission & Vision Section */}
-      <div className="w-full bg-[#E8EDEC]">
-        <div className="max-w-[1200px] mx-auto pb-32 px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 relative z-10">
-          <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-px bg-black/5 -translate-x-1/2"></div>
-          
-          <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-8 text-[#1A1A1A]">Our Mission</h2>
-            <p className="text-[#4A4A4A] mb-8 leading-relaxed text-base md:text-lg">
-              To create tangible social impact and improve the lives of citizens across the world by providing quality consultancy services and, in the process creating individuals who become future value creators in society.
-            </p>
-            <p className="text-[#1A1A1A] font-bold text-sm uppercase tracking-wider mb-4">To help startups and socially-minded organizations:</p>
-            <ul className="flex flex-col gap-3">
-              {['Maximize Earnings', 'Create More Impact', 'Tackle Business Problems', 'Capitalize on opportunities'].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-sm text-[#4A4A4A]">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#86BC2A]"></div>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-8 text-[#1A1A1A]">Our Vision</h2>
-            <p className="text-[#4A4A4A] mb-8 leading-relaxed text-base md:text-lg">
-              To provide students with a platform to hone their professional skills and acquire the best-in-class capabilities to maximise the impact created in their prospective careers while delivering quality consultancy services to socially conscious organisations.
-            </p>
-            <ul className="flex flex-col gap-3">
-              {[
-                'Inclusive, supportive and value-driven branch',
-                'Consultants being encouraged to uphold responsibility',
-                'Focused on professional development',
-                'Empowered to do work that will make a true difference in society'
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-sm text-[#4A4A4A]">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#86BC2A]"></div>
-                  {item}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
