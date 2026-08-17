@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -9,7 +10,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
+    <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}} className="flex flex-col lg:flex-row gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex-1 flex flex-col gap-16">
         <div>
           <div className="mb-6 flex items-center gap-4">
@@ -74,6 +75,6 @@ export default function Contact() {
           </form>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }

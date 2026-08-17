@@ -6,37 +6,35 @@ export const STATS = [
 ];
 
 export const ALUMNI_COMPANIES = [
-  { name: "BCG", logoUrl: "/logos/BCG_Corporate_Logo.svg" },
-  { name: "Bain & Co", logoUrl: "/logos/Bain_and_Company_Logo_1.svg" },
-  { name: "McKinsey", logoUrl: "/logos/McKinsey_Script_Mark_2019.svg" },
-  { name: "Morgan Stanley", logoUrl: "/logos/Morgan_Stanley_Logo_1.svg" },
-  { name: "Nomura", logoUrl: "/logos/nomura.svg" },
-  { name: "American Express", logoUrl: "/logos/American_Express_logo__2018_.svg" },
-  { name: "Blackrock", logoUrl: "/logos/BlackRock_wordmark.svg" },
-  { name: "JPMorgan", logoUrl: "/logos/JPMorgan_logo.svg" },
-  { name: "Goldman Sachs", logoUrl: "/logos/Goldman_Sachs.svg" },
-  { name: "Deutsche Bank", logoUrl: "/logos/Deutsche_Bank-Logo.svg" },
-  { name: "Accenture", logoUrl: "/logos/accenture.svg" },
-  { name: "LEK Consulting", logoUrl: "/logos/lek.png" },
-  { name: "Optiver", logoUrl: "/logos/optiver.png" },
-  { name: "Meta", logoUrl: "/logos/Meta_Platforms_Inc._logo.svg" },
-  { name: "Amazon", logoUrl: "/logos/Amazon_logo.svg" },
-  { name: "Intuit", logoUrl: "/logos/Intuit_logo_2022.svg" },
-  { name: "Elevation Capital" },
-  { name: "Hindustan Unilever", logoUrl: "/logos/unilever.svg" },
-  { name: "Procter & Gamble", logoUrl: "/logos/Procter___Gamble_logo.svg" },
-  { name: "3one4 Capital" },
-  { name: "Alphagrep", logoUrl: "/logos/logo-color.png" },
-  { name: "Quadeye" },
-  { name: "Boston Scientific", logoUrl: "/logos/Boston_Scientific_Logo.svg" },
-  { name: "ITC Limited", logoUrl: "/logos/ITC_Limited_Logo.svg" }
+  { name: "BCG", logoUrl: "/logos/BCG_Corporate_Logo.svg", website: "https://www.bcg.com/" },
+  { name: "Bain & Co", logoUrl: "/logos/Bain_and_Company_Logo_1.svg", website: "https://www.bain.com/" },
+  { name: "McKinsey", logoUrl: "/logos/McKinsey_Script_Mark_2019.svg", website: "https://www.mckinsey.com/" },
+  { name: "Morgan Stanley", logoUrl: "/logos/Morgan_Stanley_Logo_1.svg", website: "https://www.morganstanley.com/" },
+  { name: "Nomura", logoUrl: "/logos/nomura.svg", website: "https://www.nomura.com/" },
+  { name: "American Express", logoUrl: "/logos/American_Express_logo__2018_.svg", website: "https://www.americanexpress.com/" },
+  { name: "Blackrock", logoUrl: "/logos/BlackRock_wordmark.svg", website: "https://www.blackrock.com/" },
+  { name: "JPMorgan", logoUrl: "/logos/JPMorgan_logo.svg", website: "https://www.jpmorgan.com/" },
+  { name: "Goldman Sachs", logoUrl: "/logos/Goldman_Sachs.svg", website: "https://www.goldmansachs.com/" },
+  { name: "Deutsche Bank", logoUrl: "/logos/Deutsche_Bank-Logo.svg", website: "https://www.db.com/" },
+  { name: "Accenture", logoUrl: "/logos/accenture.svg", website: "https://www.accenture.com/" },
+  { name: "LEK Consulting", logoUrl: "/logos/lek.png?v=2", website: "https://www.lek.com/" },
+  { name: "Optiver", logoUrl: "/logos/optiver.svg?v=2", website: "https://www.optiver.com/" },
+  { name: "Meta", logoUrl: "/logos/Meta_Platforms_Inc._logo.svg", website: "https://about.meta.com/" },
+  { name: "Amazon", logoUrl: "/logos/Amazon_logo.svg", website: "https://www.amazon.jobs/" },
+  { name: "Intuit", logoUrl: "/logos/Intuit_logo_2022.svg", website: "https://www.intuit.com/" },
+  { name: "Elevation Capital", logoUrl: "/logos/elevation.png", website: "https://elevationcapital.com/" },
+  { name: "Hindustan Unilever", logoUrl: "/logos/unilever.svg", website: "https://www.hul.co.in/" },
+  { name: "Procter & Gamble", logoUrl: "/logos/Procter___Gamble_logo.svg", website: "https://us.pg.com/" },
+  { name: "3one4 Capital", logoUrl: "/logos/3one4.png", website: "https://3one4capital.com/" },
+  { name: "Alphagrep", logoUrl: "/logos/logo-color.png", website: "https://www.alpha-grep.com/" },
+  { name: "Quadeye", logoUrl: "/logos/quadeye.png", website: "https://quadeye.com/" },
+  { name: "Boston Scientific", logoUrl: "/logos/Boston_Scientific_Logo.svg", website: "https://www.bostonscientific.com/" },
+  { name: "ITC Limited", logoUrl: "/logos/ITC_Limited_Logo.svg", website: "https://www.itcportal.com/" }
 ];
 
 export const BLOG_POSTS = [
   { category: "Strategy", date: "Dec 2024", title: "Merger Mania: Trends Driving M&A in India", desc: "An in-depth look at the forces shaping mergers and acquisitions in the Indian market and what they mean for social enterprises and nonprofits.", link: "https://www.180dciitkgp.in/blogs/merger-mania-trends-driving-ma-in-india" },
-  { category: "Policy", date: "Nov 2024", title: "GST Unplugged: From Popcorn to Policies!", desc: "Breaking down GST's evolution in India through everyday examples — what it means for small businesses and nonprofits navigating compliance.", link: "https://www.180dciitkgp.in/blogs/gst-unplugged-from-popcorn-to-policies" },
-  { category: "Impact", date: "Oct 2024", title: "Measuring What Matters: M&E in the NGO Sector", desc: "Why most NGOs measure the wrong things, and how a rigorous M&E framework transforms programme design and donor confidence.", link: "https://www.180dciitkgp.in/blogs" },
-  { category: "Consulting", date: "Sep 2024", title: "The Last Mile: Distribution in Rural India", desc: "How social enterprises in rural India can rethink distribution channels to reach more beneficiaries cost-effectively.", link: "https://www.180dciitkgp.in/blogs" }
+  { category: "Policy", date: "Nov 2024", title: "GST Unplugged: From Popcorn to Policies!", desc: "Breaking down GST's evolution in India through everyday examples — what it means for small businesses and nonprofits navigating compliance.", link: "https://www.180dciitkgp.in/blogs/gst-unplugged-from-popcorn-to-policies" }
 ];
 
 export const SERVICES = [
@@ -129,12 +127,15 @@ export const TEAM = {
 };
 
 export const PROJECTS = [
-  { tag: "Education • NGO", title: "Learning Outcomes Assessment Framework", desc: "M&E framework enabling data-driven improvements across 200+ schools in rural West Bengal.", quote: "Rigour on par with any boutique consulting firm.", author: "Programme Director" },
-  { tag: "Agriculture • Social Enterprise", title: "Farmer Income Diversification Strategy", desc: "Go-to-market strategy for an agri-enterprise expanding into four districts of Andhra Pradesh.", quote: "Saved us months of guesswork. We launched with confidence.", author: "Founder, Guntur Impact Fund" },
-  { tag: "Government • MP", title: "Commercial Tax Dept. Process Optimisation", desc: "Operations consulting for MP Government's Department of Commercial Tax — streamlining taxpayer processes." },
-  { tag: "Technology • USA", title: "Trumio AI Workplace GTM Strategy", desc: "Go-to-market strategy for an AI-based workplace platform in San Francisco — US market entry." },
-  { tag: "Social Enterprise • UK", title: "The Washing Machine Project", desc: "Market expansion strategy for a UK-based social enterprise providing affordable washing solutions." },
-  { tag: "Agriculture • Singapore", title: "The Soil Regeneration Project", desc: "Research and expansion strategy for a Singapore-based agriculture social enterprise." }
+  { tag: "Government", title: "Guntur Impact Fund", desc: "Conducted market research and financial planning to generate employment for the rural population of Guntur.", impact: "Market Research & Strategy", logo: "https://picsum.photos/seed/guntur/600/400" },
+  { tag: "Automotive", title: "CARS24", desc: "Created a benchmarking framework for 28 safety-product categories and developed a data-driven rating model.", impact: "Benchmarking Framework", logo: "https://picsum.photos/seed/cars24/600/400" },
+  { tag: "Logistics", title: "Kakinada Seaport", desc: "On-site assessment of cargo logistics, creating a tracking system and ML model to analyze truck flow.", impact: "Logistics Assessment", logo: "https://picsum.photos/seed/kakinada/600/400" },
+  { tag: "Technology", title: "Trumio Inc.", desc: "Startup connecting corporate companies with college students through a project portal for real-world experience.", impact: "Platform Strategy", logo: "https://picsum.photos/seed/trumio/600/400" },
+  { tag: "Retail", title: "CHK", desc: "Curated a Go-To Market (GTM) strategy including financial, market and competitor analysis of the sneaker market.", impact: "GTM Strategy", logo: "https://picsum.photos/seed/chk/600/400" },
+  { tag: "Mobility", title: "Indeanta", desc: "Campus mobility solutions leading to a 25% reduction in transport prices.", impact: "Price Reduction Model", logo: "https://picsum.photos/seed/indeanta/600/400" },
+  { tag: "Technology", title: "BR Business Solutions", desc: "Helped the client launch their website from 0 to 1 with website layouts and inventory management.", impact: "Website Launch", logo: "https://picsum.photos/seed/brbusiness/600/400" },
+  { tag: "Government", title: "Commercial Tax Dept.", desc: "Operations consulting for MP Government's Department of Commercial Tax.", impact: "Process Optimisation", logo: "https://picsum.photos/seed/comtax/600/400" },
+  { tag: "Social Enterprise", title: "Washing Machine Project", desc: "Market expansion strategy for a UK-based social enterprise providing affordable washing solutions.", impact: "Expansion Strategy", logo: "https://picsum.photos/seed/washing/600/400" }
 ];
 
 export const RESOURCES = [

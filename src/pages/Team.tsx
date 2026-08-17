@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { TEAM } from '../data';
 
 const LinkedInIcon = () => (
@@ -9,7 +10,7 @@ const LinkedInIcon = () => (
 
 export default function Team() {
   return (
-    <div className="bg-[#EAEAEA] min-h-screen pt-32 pb-24 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10 font-sans">
+    <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}} className="min-h-screen pt-32 pb-24 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10 font-sans">
       
       {/* HEADER */}
       <div className="flex justify-center mb-16 text-center">
@@ -43,7 +44,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
                <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                  {d.avatar.includes('/') ? (
-                   <img src={d.avatar} alt={d.name} className="w-full h-full object-cover"  />
+                   <img src={d.avatar} alt={d.name} className="w-full h-full object-cover" referrerPolicy="no-referrer"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500">{d.avatar}</div>
                  )}
@@ -69,7 +70,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
                <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                  {advisor.avatar.includes('/') ? (
-                   <img src={advisor.avatar} alt={advisor.name} className="w-full h-full object-cover object-top"  />
+                   <img src={advisor.avatar} alt={advisor.name} className="w-full h-full object-cover object-top" referrerPolicy="no-referrer"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500">{advisor.avatar}</div>
                  )}
@@ -94,7 +95,7 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
               <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                 {alumnus.avatar.includes('/') ? (
-                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top grayscale"  />
+                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top grayscale" referrerPolicy="no-referrer"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500 bg-gray-200">{alumnus.avatar}</div>
                  )}
@@ -109,6 +110,6 @@ export default function Team() {
         </div>
       </section>
 
-    </div>
+    </motion.div>
   );
 }

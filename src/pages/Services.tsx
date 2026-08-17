@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import { SERVICES, ENGAGEMENT_TIMELINE, FAQS } from '../data';
 import { useState } from 'react';
 
@@ -5,7 +6,7 @@ export default function Services() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-32 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
+    <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}} className="flex flex-col gap-32 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex flex-col">
         <div className="mb-6 flex items-center gap-4">
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
@@ -16,14 +17,14 @@ export default function Services() {
         </h1>
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 border-t border-gray-200 pt-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
         {SERVICES.map((s, i) => (
-          <div key={i} className="flex flex-col gap-6 group">
-            <div className="text-[10px] text-gray-400 font-mono font-bold tracking-widest">0{i+1}</div>
-            <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#86BC2A] text-black transition-colors">{s.vertical}</h3>
-            <ul className="flex flex-col gap-4 border-l-2 border-gray-200 pl-6">
+          <div key={i} className="flex flex-col gap-6 group border border-gray-200 bg-white p-10 hover:border-[#86BC2A] transition-colors shadow-sm hover:shadow-md h-full">
+            <div className="font-montserrat text-[10px] text-gray-400 font-bold tracking-widest">0{i+1}</div>
+            <h3 className="font-montserrat text-2xl font-bold tracking-tight group-hover:text-[#86BC2A] text-black transition-colors">{s.vertical}</h3>
+            <ul className="flex flex-col gap-4 border-l-2 border-gray-200 group-hover:border-[#86BC2A] transition-colors pl-6 mt-auto">
               {s.offerings.map((offering, j) => (
-                <li key={j} className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-600 leading-relaxed">{offering}</li>
+                <li key={j} className="font-montserrat text-[10px] tracking-[0.2em] uppercase text-gray-600 leading-relaxed">{offering}</li>
               ))}
             </ul>
           </div>
@@ -63,6 +64,6 @@ export default function Services() {
           ))}
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

@@ -1,8 +1,9 @@
+import { motion } from 'motion/react';
 import { RESOURCES } from '../data';
 
 export default function Resources() {
   return (
-    <div className="flex flex-col gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
+    <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.6}} className="flex flex-col gap-24 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32 relative z-10">
       <div className="flex flex-col">
         <div className="mb-6 flex items-center gap-4">
           <div className="h-[2px] w-12 bg-[#86BC2A]"></div>
@@ -27,6 +28,6 @@ export default function Resources() {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
