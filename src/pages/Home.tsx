@@ -40,14 +40,14 @@ const CompanyLogo = ({ company }: { company: { name: string, logoUrl?: string, w
 
 export default function Home({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
-    <div className="flex flex-col gap-32 relative z-10 pt-32 pb-12 px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="flex flex-col gap-32 relative z-10 pt-20 pb-12 px-6 md:px-16 lg:px-24 xl:px-32">
       {/* Hero */}
-      <section className="flex flex-col lg:flex-row gap-16 pt-10">
+      <section className="flex flex-col lg:flex-row gap-12 lg:gap-8 xl:gap-16">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex-1 flex flex-col justify-center"
+          className="flex-1 flex flex-col justify-start lg:mt-8"
         >
           <motion.div 
             initial={{ opacity: 0 }}
@@ -59,7 +59,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
             <span className="text-[#86BC2A] text-[11px] font-black uppercase tracking-[0.5em]">IIT Kharagpur &middot; 180DC Global Network</span>
           </motion.div>
           
-          <h1 className="text-[12vw] sm:text-6xl md:text-[80px] lg:text-[100px] font-black leading-[0.9] uppercase tracking-tighter mb-10 text-[#0F1115]">
+          <h1 className="text-[11vw] sm:text-5xl md:text-[64px] lg:text-[56px] xl:text-[72px] 2xl:text-[84px] font-black leading-[0.9] uppercase tracking-tighter mb-10 text-[#0F1115] whitespace-nowrap">
             Turning<br/>Challenges<br/>Into <br />
             <motion.span
               initial="hidden"
@@ -127,7 +127,7 @@ export default function Home({ onNavigate }: { onNavigate: (page: string) => voi
           transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
           className="w-full lg:w-1/3 flex flex-col justify-end border-l-2 border-gray-200 pl-8 py-8 relative"
         >
-           <div className="mb-12">
+           <div className="mb-12 flex flex-col items-center text-center">
              <div className="w-64 h-64 md:w-96 md:h-96 mb-8 flex-shrink-0 relative">
                <img src={logo180dcGlobe} alt="180DC Logo Globe" className="w-full h-full object-contain mix-blend-multiply" />
              </div>

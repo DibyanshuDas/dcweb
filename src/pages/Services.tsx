@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { SERVICES, ENGAGEMENT_TIMELINE, FAQS } from '../data';
 import { useState } from 'react';
+import { Search, FileText, BarChart2, Flag } from 'lucide-react';
 
 export default function Services() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -31,15 +32,46 @@ export default function Services() {
         ))}
       </section>
 
-      <section>
-        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-16 text-black">Engagement Timeline</h2>
-        <div className="flex flex-col md:flex-row justify-between border-t border-gray-200">
-          {ENGAGEMENT_TIMELINE.map((step, i) => (
-            <div key={i} className="flex-1 border-b md:border-b-0 md:border-r border-gray-200 p-10 flex flex-col gap-4 hover:bg-gray-50 transition-colors">
-              <div className="text-2xl font-black uppercase tracking-tight text-[#86BC2A]">{i+1}. {step.step}</div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-gray-500 leading-loose">{step.weeks}</div>
+      <section className="py-12">
+        <div className="bg-white rounded-[2rem] shadow-sm border border-gray-100 p-12 md:p-20 flex flex-col items-center relative overflow-hidden">
+          <div className="text-center mb-16 relative z-10">
+            <h4 className="text-[#86BC2A] text-xs font-semibold tracking-[0.2em] uppercase mb-4 font-montserrat">Process</h4>
+            <h2 className="text-4xl md:text-5xl font-serif text-[#0F1115] tracking-tight">Engagement Timeline</h2>
+          </div>
+
+          <div className="relative w-full max-w-5xl mx-auto">
+            {/* Connecting Line */}
+            <div className="absolute top-[24px] left-[12%] right-[12%] h-[1px] bg-gray-200 hidden md:block"></div>
+
+            <div className="flex flex-col md:flex-row justify-between relative z-10 gap-12 md:gap-4">
+              {ENGAGEMENT_TIMELINE.map((step, i) => {
+                const Icon = [Search, FileText, BarChart2, Flag][i];
+                
+                return (
+                  <div key={i} className="group flex flex-col items-center text-center flex-1 cursor-default">
+                    {/* Number Circle */}
+                    <div className="w-12 h-12 rounded-full border flex items-center justify-center font-montserrat font-medium text-lg mb-8 transition-colors relative z-10 bg-white border-gray-200 text-gray-800 group-hover:bg-[#86BC2A] group-hover:border-[#86BC2A] group-hover:text-white">
+                      {i + 1}
+                    </div>
+
+                    {/* Icon Circle */}
+                    <div className="w-16 h-16 rounded-full bg-[#86BC2A]/5 group-hover:bg-[#86BC2A]/10 flex items-center justify-center text-[#86BC2A] mb-6 transition-colors">
+                      {Icon && <Icon className="w-6 h-6" strokeWidth={1.5} />}
+                    </div>
+
+                    {/* Text content */}
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 flex items-center justify-center gap-2 font-montserrat tracking-tight">
+                      {step.step}
+                      <span className="w-2 h-2 rounded-full bg-[#86BC2A] opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    </h3>
+                    <p className="text-sm text-gray-500 leading-relaxed max-w-[200px] mx-auto font-montserrat">
+                      {step.weeks}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
-          ))}
+          </div>
         </div>
       </section>
 

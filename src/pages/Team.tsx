@@ -52,9 +52,15 @@ export default function Team() {
                <div className="text-xl font-bold text-black mb-1">{d.name}</div>
                <a href={`mailto:${d.email}`} className="text-[13px] text-[#86BC2A] underline mb-4 hover:opacity-80">{d.email}</a>
                <div className="text-[13px] text-gray-800 mb-6">{d.role === "Executive Director" ? d.dept : `${d.role} | ${d.dept}`}</div>
-               <a href="#" className="inline-block mt-auto">
-                 <LinkedInIcon />
-               </a>
+               {d.linkedin ? (
+                 <a href={d.linkedin} target="_blank" rel="noopener noreferrer" className="inline-block mt-auto">
+                   <LinkedInIcon />
+                 </a>
+               ) : (
+                 <div className="inline-block mt-auto opacity-0 pointer-events-none">
+                   <LinkedInIcon />
+                 </div>
+               )}
             </div>
           ))}
         </div>
@@ -77,9 +83,15 @@ export default function Team() {
                </div>
                <div className="text-xl font-bold text-black mb-1">{advisor.name}</div>
                <a href={`mailto:${advisor.email}`} className="text-[13px] text-[#86BC2A] underline mb-6 hover:opacity-80">{advisor.email}</a>
-               <a href="#" className="inline-block mt-auto">
-                 <LinkedInIcon />
-               </a>
+               {advisor.linkedin ? (
+                 <a href={advisor.linkedin} target="_blank" rel="noopener noreferrer" className="inline-block mt-auto">
+                   <LinkedInIcon />
+                 </a>
+               ) : (
+                 <div className="inline-block mt-auto opacity-0 pointer-events-none">
+                   <LinkedInIcon />
+                 </div>
+               )}
             </div>
           ))}
         </div>
@@ -95,16 +107,22 @@ export default function Team() {
             <div key={i} className="flex flex-col items-center text-center group">
               <div className="w-full aspect-[4/5] bg-gray-300 mb-6 overflow-hidden">
                 {alumnus.avatar.includes('/') ? (
-                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top grayscale" referrerPolicy="no-referrer"  />
+                   <img src={alumnus.avatar} alt={alumnus.name} className="w-full h-full object-cover object-top" referrerPolicy="no-referrer"  />
                  ) : (
                    <div className="w-full h-full flex items-center justify-center text-4xl font-bold text-gray-500 bg-gray-200">{alumnus.avatar}</div>
                  )}
               </div>
               <h4 className="text-lg font-bold text-black mb-3">{alumnus.name}</h4>
               <div className="text-xs text-gray-700 mb-6 max-w-[90%] leading-relaxed">{alumnus.co}</div>
-              <a href="#" className="inline-block mt-auto">
-                <LinkedInIcon />
-              </a>
+              {alumnus.linkedin ? (
+                <a href={alumnus.linkedin} target="_blank" rel="noopener noreferrer" className="inline-block mt-auto">
+                  <LinkedInIcon />
+                </a>
+              ) : (
+                <div className="inline-block mt-auto opacity-0 pointer-events-none">
+                  <LinkedInIcon />
+                </div>
+              )}
             </div>
           ))}
         </div>

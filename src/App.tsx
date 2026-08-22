@@ -60,7 +60,7 @@ export default function App() {
           </AnimatePresence>
         </main>
         {currentPage !== 'Projects' && (
-          <div className="px-6 md:px-16 lg:px-24 xl:px-32">
+          <div className={`px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col ${currentPage === 'About' ? 'bg-[#FDFCF8] relative z-10' : ''}`}>
             <Footer onNavigate={setCurrentPage} />
           </div>
         )}
